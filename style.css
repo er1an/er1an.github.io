@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: rgb(34, 65, 206);
+    height: 100px;
+    width: 100%;
+}
+label.logo {
+    font-family: montserrat;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: montserrat
+}
+a.active{
+    background: #ff1b5f;
+    transition: .5s;
+}
+.chekbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        font-family: montserrat
+    }
+}
+@media (max-width: 858px){
+    .chekbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        font-family: montserrat
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
+@media (max-width: 336px){
+    label.logo{
+        color: rgb(192, 92, 92);
+    font-size: 15px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: 20px;
+    }
+    a {
+        font-size: 10px;
+    }
+    
+}
+.blgo {
+    color: aliceblue;
+    background: #acc92f;
+    transition: background .5s;
+}
+.blgo:hover{
+    background: #563434;
+}
+table {
+    font-family: initial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    border-collapse: collapse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+td, th {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-collapse: collapse;
+}
+h1 {
+    text-align: center;
+}
+@media (max-width: 1024px){
+    table {
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 948px){
+    table {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 778px){
+    table {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 655px){
+    table {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 524px){
+    table {
+     font-size: 9px;
+    }
+}
+@media (max-width: 396px){
+    table {
+        font-size: 7px;
+        padding-bottom: 30px;
+    }
+}
+.erro {
+    background: linear-gradient(90deg, #fc56af, #ffab73);
+
+}
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.table2 {
+    margin-top: 50px;
+}
+
+    
+
+
